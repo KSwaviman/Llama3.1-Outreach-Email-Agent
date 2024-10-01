@@ -1,4 +1,3 @@
-langchain
 beautifulsoup4
 langchain-community
 langchain-groq
@@ -8,3 +7,4 @@ pandas
 chromadb
 python-dotenv
 uuid
+protobuf==3.20.*
