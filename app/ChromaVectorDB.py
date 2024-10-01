@@ -35,6 +35,14 @@ data = {
 # Create DataFrame
 df = pd.DataFrame(data)
 
+client = chromadb.PersistentClient('vectorstore')
+collection = client.get_or_create_collection(name="portfolio")
+
+if not collection.count():
+    for _, row in df.iterrows():
+        collection.add(documents=row["Techstack"],
+                       metadatas={"links": row["Links"]},
+                       ids=[str(uuid.uuid4())])
 
 class Portfolio:
     def __init__(self, df):
