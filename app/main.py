@@ -146,13 +146,10 @@ def create_streamlit_app(llm, portfolio, clean_text):
                 links = portfolio.query_links(skills)
                 email = llm.write_mail(job, links)
 
-                # Display result within a styled block
-                st.markdown(f"""
-                    <div class="main">
-                    <h3>{job['role']}</h3>
-                    <pre>{email}</pre>
-                    </div>
-                """, unsafe_allow_html=True)
+                # Display result within a text area for easier clipboard functionality
+                email_area = st.text_area("Generated Email", email, height=300)
+
+               
 
         except Exception as e:
             st.error(f"An Error Occurred: {e}")

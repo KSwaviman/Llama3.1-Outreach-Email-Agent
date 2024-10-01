@@ -57,7 +57,11 @@ class Chain:
         )
         chain_email = prompt_email | self.llm
         res = chain_email.invoke({"job_description": str(job), "link_list": links})
-        return res.content
+        # Add line breaks to the signature
+        email_content = res.content.replace(
+        "Goutham Business Development Executive Quantum Leap",
+        "Goutham\n\nBusiness Development Executive\n\nQuantum Leap")
+        return email_content
 
 if __name__ == "__main__":
     print(os.getenv("GROQ_API_KEY"))
