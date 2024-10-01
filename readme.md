@@ -88,6 +88,12 @@ Here’s a breakdown of the technologies and tools used in this project:
 
 2. Enter a job description URL, and the app will generate a tailored outreach email for business development purposes.
 
+
+
+https://github.com/user-attachments/assets/4c5d7c7b-0b0e-45d1-9318-805908e2e812
+
+
+
 ---
 
 ## 📜 License
