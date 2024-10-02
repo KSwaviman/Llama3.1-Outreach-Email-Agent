@@ -1,7 +1,7 @@
 
 # Outreach Email Agent 📬
 
-This project is designed to assist Business Development Officers by generating personalized outreach emails based on job descriptions scraped from websites. It utilizes LangChain for web scraping and document loading, a vector database for storing and retrieving relevant information, and LLaMA 3.1 on Groq for natural language processing and generating emails. This tool makes the task of reaching potential clients more efficient and streamlined.
+This project is designed to assist Business Development Officers by generating personalized outreach emails based on job descriptions scraped from websites. It utilizes LangChain for web scraping and document loading, a vector database for storing and retrieving relevant portfolios, and LLaMA 3.1 on Groq for identifying necessary elements from extrcated data and generating emails. This tool makes the task of reaching potential clients more efficient and streamlined.
 
 ## 🚀 Project Overview
 
