@@ -1,4 +1,4 @@
 .env
 groq_project.ipynb
 chromaDB.ipynb
-venv
+venv/
